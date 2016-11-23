@@ -1,0 +1,25 @@
+{
+  "name": "vue-online",
+  "version": "0.1.0",
+  "description": "A reactive online/offline component for vue.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sopamo/vue-online.git"
+  },
+  "keywords": [
+    "vue",
+    "connection-status",
+    "online",
+    "offline"
+  ],
+  "author": "Sopamo GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sopamo/vue-online/issues"
+  },
+  "homepage": "https://github.com/Sopamo/vue-online#readme",
+  "dependencies": {
+    "vue": "^2.0.0"
+  }
+}
