@@ -1,6 +1,6 @@
 {
   "name": "vue-online",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A reactive online/offline component for vue.js",
   "main": "./build.js",
   "repository": {
