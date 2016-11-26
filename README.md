@@ -51,6 +51,13 @@ You can use ConnectionStatus.online anywhere in your app, it updates dynamically
     }
     </script>
 
+# Custom offline message
+
+To use a custom message, simply specify it on the component:
+
+    <OfflineIndicator message="Oh no, you're offline :("></OfflineIndicator>
+
+
 # Custom styling
 
 To style the offline indicator just use the css selector div.offline-indicator:
