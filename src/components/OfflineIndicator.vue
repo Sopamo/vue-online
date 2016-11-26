@@ -26,17 +26,24 @@
 
 <template>
   <transition name="slideup">
-    <div class="offline-indicator" v-if="!online">You are offline.</div>
+    <div class="offline-indicator" v-if="!online">{{ statusMessage }}</div>
   </transition>
 </template>
 
 <script>
   import ConnectionStatus from '../ConnectionStatus'
   export default {
+    props: ['message'],
     computed: {
       online () {
         return ConnectionStatus.online
-      }
+      },
+      statusMessage() {
+        if (typeof this.message !== 'undefined') {
+          return this.message
+        }
+        return 'You are offline.'
+      },
     }
   }
 </script>
