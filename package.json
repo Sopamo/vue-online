@@ -2,7 +2,7 @@
   "name": "vue-online",
   "version": "1.1.1",
   "description": "A reactive online/offline component for vue.js",
-  "main": "./main.js",
+  "main": "./build.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sopamo/vue-online.git"
@@ -23,7 +23,15 @@
     "url": "https://github.com/Sopamo/vue-online/issues"
   },
   "homepage": "https://github.com/Sopamo/vue-online#readme",
+  "scripts": {
+    "compile": "babel --presets es2015 main.js --out-file build.js",
+    "prepublish": "npm run compile"
+  },
   "dependencies": {
     "vue": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0"
   }
 }
