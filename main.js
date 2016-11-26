@@ -1,4 +1,3 @@
-module.exports = {
-    'OfflineIndicator': require('./src/components/OfflineIndicator.vue'),
-    'ConnectionStatus': require('./src/ConnectionStatus.js')
-}
+import OfflineIndicator from './src/components/OfflineIndicator'
+import ConnectionStatus from './src/ConnectionStatus'
+export { OfflineIndicator, ConnectionStatus}
