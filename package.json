@@ -1,6 +1,6 @@
 {
   "name": "vue-online",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A reactive online/offline component for vue.js",
   "main": "./dist/bundle.js",
   "repository": {
