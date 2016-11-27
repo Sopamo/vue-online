@@ -1,4 +1,5 @@
 import Vue from 'vue'
+
 // Create a vue instance so we get reacitivity for free
 const main = new Vue({
   data: {

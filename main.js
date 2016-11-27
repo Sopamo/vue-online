@@ -1,3 +1,3 @@
-import OfflineIndicator from './src/components/OfflineIndicator'
-import ConnectionStatus from './src/ConnectionStatus'
-export { OfflineIndicator, ConnectionStatus}
+import OfflineIndicator from './src/components/OfflineIndicator.vue'
+import ConnectionStatus from './src/ConnectionStatus.js'
+export { OfflineIndicator, ConnectionStatus }
