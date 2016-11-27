@@ -500,8 +500,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	//
 	//
 	//
-	//
-	//
 
 /***/ },
 /* 7 */
@@ -6603,13 +6601,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
-	  return _vm._h('div', ["yay\n  ", _vm._h('transition', {
+	  return _vm._h('transition', {
 	    attrs: {
 	      "name": "slideup"
 	    }
 	  }, [(!_vm.online) ? _vm._h('div', {
 	    staticClass: "offline-indicator"
-	  }, [_vm._s(_vm.statusMessage)]) : _vm._e()])])
+	  }, [_vm._s(_vm.statusMessage)]) : _vm._e()])
 	},staticRenderFns: []}
 	module.exports.render._withStripped = true
 	if (false) {
