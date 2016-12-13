@@ -1,29 +1,31 @@
-const Vue = require('vue')
-const main = new Vue({
-  data() {
-    return {
-      isOnline: true
+(function() {
+  const Vue = require('vue')
+  const main = new Vue({
+    data() {
+      return {
+        isOnline: true
+      }
+    },
+    methods: {
+      updateStatus: function() {
+        if (typeof window.navigator.onLine === 'undefined') {
+          // If the browser doesn't support connection status reports
+          // assume that we are online because most apps' only react
+          // when they now that the connection has been interrupted
+          main.isOnline = true
+        } else {
+          main.isOnline = window.navigator.onLine
+        }
+      }
     }
-  }
-})
+  })
 
-// The method which sets the current online/offline status
-function updateStatus() {
-  if (typeof window.navigator.onLine === 'undefined') {
-    // If the browser doesn't support connection status reports
-    // assume that we are online because most apps' only react
-    // when they now that the connection has been interrupted
-    main.isOnline = true
-  } else {
-    main.isOnline = window.navigator.onLine
-  }
-}
+  // Initial setup
+  main.updateStatus()
 
-// Initial setup
-updateStatus()
+  // Setup the listeners
+  window.addEventListener('online', main.updateStatus)
+  window.addEventListener('offline', main.updateStatus)
 
-// Setup the listeners
-window.addEventListener('online', () => updateStatus())
-window.addEventListener('offline', () => updateStatus())
-
-module.exports = main
+  module.exports = main
+})()
