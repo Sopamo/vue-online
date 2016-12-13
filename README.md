@@ -4,6 +4,10 @@
 
 ![Vue online preview](https://raw.githubusercontent.com/Sopamo/vue-online/master/preview.gif)
 
+# Installation
+    
+    npm install vue-online --save-dev
+
 # Usage
 That's a basic example of a component which would just show the offline message if the user has no connection:
 
