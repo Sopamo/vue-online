@@ -31,8 +31,8 @@
 </template>
 
 <script>
-  import VueOnline from '../VueOnline'
-  export default {
+  const VueOnline = require('../VueOnline')
+  module.exports = {
     props: ['message'],
     computed: {
       isOnline() {

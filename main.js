@@ -1,3 +1,3 @@
-import VueOnline from './src/VueOnline.js'
-import OfflineIndicator from './src/components/OfflineIndicator.vue'
-export { OfflineIndicator, VueOnline }
+const VueOnline = require('./src/VueOnline.js')
+const OfflineIndicator = require('./src/components/OfflineIndicator.vue')
+module.exports = { OfflineIndicator, VueOnline }

@@ -1,4 +1,4 @@
-import Vue from 'vue'
+const Vue = require('vue')
 const main = new Vue({
   data() {
     return {
@@ -26,4 +26,4 @@ updateStatus()
 window.addEventListener('online', () => updateStatus())
 window.addEventListener('offline', () => updateStatus())
 
-export default main
+module.exports = main
