@@ -1,21 +1,21 @@
 import Vue from 'vue'
-
-// Create a vue instance so we get reacitivity for free
 const main = new Vue({
-  data: {
-    online: true
+  data() {
+    return {
+      isOnline: true
+    }
   }
 })
 
 // The method which sets the current online/offline status
-function updateStatus () {
+function updateStatus() {
   if (typeof window.navigator.onLine === 'undefined') {
     // If the browser doesn't support connection status reports
     // assume that we are online because most apps' only react
     // when they now that the connection has been interrupted
-    main.online = true
+    main.isOnline = true
   } else {
-    main.online = window.navigator.onLine
+    main.isOnline = window.navigator.onLine
   }
 }
 

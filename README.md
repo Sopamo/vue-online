@@ -14,7 +14,7 @@ That's a basic example of a component which would just show the offline message 
     </template>
 
     <script>
-    import OfflineIndicator from 'vue-online'
+    import { OfflineIndicator } from 'vue-online'
 
     export default {
       name: 'app',
@@ -36,13 +36,13 @@ You can use ConnectionStatus.online anywhere in your app, it updates dynamically
     </template>
 
     <script>
-    import {OfflineIndicator, ConnectionStatus} from 'vue-online'
+    import { OfflineIndicator, VueOnline } from 'vue-online'
 
     export default {
       name: 'app',
       computed: {
         online () {
-          return ConnectionStatus.online
+          return VueOnline.isOnline
         }
       },
       components: {
@@ -66,4 +66,3 @@ To style the offline indicator just use the css selector div.offline-indicator:
       background: red;
       color: white;
     }
-    
