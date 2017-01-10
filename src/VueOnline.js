@@ -1,7 +1,7 @@
 (function() {
   const Vue = require('vue')
   const main = new Vue({
-    data() {
+    data: function () {
       return {
         isOnline: true
       }
