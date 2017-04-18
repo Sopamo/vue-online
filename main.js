@@ -1,3 +1,2 @@
-const VueOnline = require('./src/VueOnline.js')
-const OfflineIndicator = require('./src/components/OfflineIndicator.vue')
-module.exports = { OfflineIndicator: OfflineIndicator, VueOnline: VueOnline }
+export { default as VueOnline } from './src/VueOnline.js'
+export { OfflineIndicator } from './src/components/OfflineIndicator.vue'
