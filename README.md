@@ -6,7 +6,7 @@
 
 # Installation
     
-    npm install vue-online --save-dev
+    npm install vue-online --save
 
 # Usage
 That's a basic example of a component which would just show the offline message if the user has no connection:
