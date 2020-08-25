@@ -1,5 +1,5 @@
 (function() {
-  const Vue = require('vue')
+  const Vue = require('vue').default
   const main = new Vue({
     data: function () {
       return {
